@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    // Array storing months
+    string months[12] = {
+        "January", "February", "March", "April",
+        "May", "June", "July", "August",
+        "September", "October", "November", "December"
+    };
+
+    // Array storing number of days (No leap year)
+    int days[12] = {
+        31, 28, 31, 30,
+        31, 30, 31, 31,
+        30, 31, 30, 31
+    };
+
+    cout << "Months of the Year and Their Days:\n\n";
+
+    for(int i = 0; i < 12; i++) {
+        cout << months[i] << " has " << days[i] << " days." << endl;
+    }
+
+    return 0;
+}
